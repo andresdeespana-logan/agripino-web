@@ -152,7 +152,7 @@ html.datos-ok .pendiente { background: none; padding: 0; }
 /* ---------- Precios ---------- */
 .precios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .precio {
-  display: grid; grid-template-rows: auto auto 1fr; gap: 0.75rem;
+  display: grid; align-content: start; gap: 0.75rem;
   border: 2px solid var(--linea); border-radius: var(--radio); padding: 1.75rem; background: var(--papel);
 }
 .precio--destacado { border-color: var(--caoba); }
@@ -271,3 +271,6 @@ html.datos-ok .pendiente { background: none; padding: 0; }
 }
 .faq-item[open] summary::after { content: "–"; }
 .faq-item p { padding: 0 1.25rem 1.25rem; font-size: 1.15rem; color: var(--tinta-suave); }
+.incluye { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+.incluye li { padding-left: 1.6rem; position: relative; }
+.incluye li::before { content: "✓"; position: absolute; left: 0; color: var(--caoba); font-weight: 600; }
