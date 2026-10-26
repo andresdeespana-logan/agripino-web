@@ -14,7 +14,7 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Agripino Ortiz · Peluquería de Caballeros">
 <meta property="og:title" content="Peluquería de Caballeros en Alicante | Agripino Ortiz">
-<meta property="og:description" content="Peluquería de caballeros de toda la vida, para abuelos, padres e hijos. Corte desde 14 €, barba y corte a domicilio. Pida cita por WhatsApp.">
+<meta property="og:description" content="Peluquería de caballeros de toda la vida, para padres, hijos y abuelos. Corte desde 14 €, barba y corte a domicilio. Pida cita por WhatsApp.">
 <meta property="og:url" content="https://agripino-web.vercel.app/">
 <meta property="og:image" content="https://agripino-web.vercel.app/img/video-portada.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -37,6 +37,7 @@
   "https://agripino-web.vercel.app/img/video-portada.jpg"
  ],
  "telephone": "+34630441204",
+ "email": "agripino_ortiz63@hotmail.com",
  "priceRange": "14 € - 28 €",
  "currenciesAccepted": "EUR",
  "address": {
@@ -200,7 +201,7 @@
   },
   {
    "@type": "Question",
-   "name": "¿Podemos venir juntos el abuelo, el padre y el hijo?",
+   "name": "¿Podemos venir juntos el padre, el hijo y el abuelo?",
    "acceptedAnswer": {
     "@type": "Answer",
     "text": "Claro que sí, es lo que más nos gusta. Somos una peluquería familiar: pida cita para varios a la vez por WhatsApp y les organizamos los turnos seguidos."
@@ -316,19 +317,20 @@
   <section class="portada">
     <div class="contenedor">
       <div class="portada-texto">
+        <a class="valoracion" data-maps href="#opiniones" target="_blank" rel="noopener" aria-label="Valoración de 4,8 sobre 5 en Google, más de 300 opiniones">
+          <strong>4,8</strong>
+          <span class="estrellas" aria-hidden="true">★★★★★</span>
+          <span>más de 300 opiniones en Google</span>
+        </a>
         <span class="etiqueta">Peluquería de caballeros · Centro de Alicante</span>
         <h1>Peluquería de caballeros <em>de toda la vida</em> en Alicante</h1>
-        <p>Para abuelos, padres e hijos. Un sitio tranquilo, con buena conversación y buena música, donde se le atiende con educación y respeto. Sale con un corte de pelo perfecto y bien perfumado.</p>
+        <p>Para padres, hijos y abuelos. Un lugar tranquilo, con buena música y conversación amena, donde se le atiende con educación y respeto. Saldrá con un corte impecable y bien perfumado.</p>
         <div class="portada-ctas">
           <a class="btn btn--whatsapp" data-whatsapp href="#contacto" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2L9 9.5z" fill="currentColor" stroke="none"/></svg>
             Pedir cita por WhatsApp
           </a>
           <a class="btn btn--secundario" href="#precios">Ver precios</a>
-        </div>
-        <div class="valoracion">
-          <span class="estrellas" aria-hidden="true">★★★★★</span>
-          <span><strong>4,8</strong> de 5 en Google · más de 300 opiniones</span>
         </div>
       </div>
       <figure class="lamina">
@@ -349,18 +351,18 @@
         <article class="precio">
           <h3>Corte de caballero</h3>
           <div class="precio-cifra">14 a 18 €</div>
-          <p>Corte de pelo de hombre, clásico o moderno, a tijera o a máquina, con su toque de perfume. El precio depende del tipo de corte.</p>
+          <p>Un corte a la medida de cada caballero, clásico o actual, realizado a tijera o a máquina con el esmero del oficio y rematado con un discreto toque de colonia. El precio varía según el estilo elegido.</p>
         </article>
         <article class="precio precio--destacado">
           <span class="sello">El más completo</span>
           <h3>Corte y barba completa</h3>
           <div class="precio-cifra">28 €</div>
-          <p>Corte de caballero y tratamiento completo de barba: arreglo y perfilado para que salga impecable.</p>
+          <p>El servicio más completo: su corte de caballero y un cuidado integral de la barba, arreglada y perfilada con precisión para que luzca impecable.</p>
         </article>
         <article class="precio">
           <h3>Retoque cada 15 días</h3>
           <div class="precio-cifra">9 € <small>cada vez</small></div>
-          <p>Un repaso cada dos semanas para ir siempre perfecto. Puede dejarlo fijo y le guardamos su hueco.</p>
+          <p>Un repaso cada dos semanas para que su corte luzca siempre como el primer día. Si lo desea, le reservamos su hora de forma permanente.</p>
         </article>
       </div>
       <p class="nota-precios">Para pedir cita escriba por WhatsApp o llame al <a data-tel href="#contacto"><span data-tel-texto>630 441 204</span></a>.</p>
@@ -375,25 +377,26 @@
         <h2>Un rato a gusto, como en casa</h2>
         <p>Tres sillones, madera, espejos y la radio de fondo. Aquí nadie tiene prisa.</p>
       </div>
-      <figure class="panoramica">
-        <img src="img/local-panoramica.jpg" width="2028" height="480" alt="Interior de la peluquería: tres sillones negros frente a espejos, muebles de madera y estanterías con perfumes" loading="lazy">
+      <figure class="panoramica" id="panoramica">
+        <img src="img/local-panoramica.jpg" width="2028" height="480" alt="Interior de la peluquería: tres sillones negros frente a espejos, muebles de madera y estanterías con perfumes">
       </figure>
+      <p class="panoramica-ayuda">Deslice la foto con el dedo para ver todo el local.</p>
       <ul class="rasgos">
         <li>
           <svg class="icono" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="16" cy="16" r="6"/><circle cx="34" cy="18" r="5"/><circle cx="25" cy="30" r="4"/><path d="M5 42c1-7 5.5-11 11-11M43 42c-1-6-4.5-9.5-9-9.5M17 44c1-4.5 4-7 8-7s7 2.5 8 7"/></svg>
-          <div><h3>Para toda la familia</h3><p>Vienen juntos abuelos, padres y nietos. Cada uno con su corte, todos bien atendidos.</p></div>
+          <div><h3>Para toda la familia</h3><p>Padres, hijos y abuelos comparten sillón y conversación. Cada uno recibe la atención que merece.</p></div>
         </li>
         <li>
           <svg class="icono" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M8 10h32v20H22l-9 8v-8H8z"/><path d="M15 18h18M15 24h11"/></svg>
-          <div><h3>Trato con educación y respeto</h3><p>Le escuchamos, le preguntamos cómo lo quiere y hacemos el corte con calma.</p></div>
+          <div><h3>Trato con educación y respeto</h3><p>Le recibimos con cortesía, escuchamos cómo desea su corte y trabajamos sin prisas.</p></div>
         </li>
         <li>
           <svg class="icono" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 36V10l22-4v26"/><circle cx="13" cy="36" r="5"/><circle cx="35" cy="32" r="5"/></svg>
-          <div><h3>Música y buena conversación</h3><p>Un espacio acogedor para desconectar mientras le cortan el pelo.</p></div>
+          <div><h3>Música y buena conversación</h3><p>Un espacio acogedor para disfrutar de un momento solo para usted.</p></div>
         </li>
         <li>
           <svg class="icono" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="13" cy="34" r="6"/><circle cx="13" cy="14" r="6"/><path d="M18 17l24 15M18 31l24-15"/></svg>
-          <div><h3>Corte perfecto y bien perfumado</h3><p>Oficio de barbero clásico y el toque final de colonia.</p></div>
+          <div><h3>Corte perfecto y bien perfumado</h3><p>El oficio del barbero clásico, cuidado en cada detalle y rematado con un toque de colonia.</p></div>
         </li>
       </ul>
     </div>
@@ -405,8 +408,8 @@
       <div class="domicilio-texto">
         <span class="etiqueta">Si usted no puede venir, vamos nosotros</span>
         <h2>Peluquero a domicilio para personas mayores y con discapacidad</h2>
-        <p>Cortamos el pelo en casa a personas mayores que ya no pueden desplazarse y a personas con discapacidad. Con la misma calma y el mismo cuidado que en la peluquería.</p>
-        <p>Llame o escriba por WhatsApp y acordamos el día y la hora.</p>
+        <p>Nos desplazamos a su domicilio para atender a personas mayores que ya no pueden salir de casa y a personas con discapacidad, con la misma delicadeza y el mismo esmero que en nuestro salón.</p>
+        <p>Llámenos o escríbanos por WhatsApp y concertaremos el día y la hora que mejor le convengan.</p>
         <div class="portada-ctas">
           <a class="btn btn--whatsapp" data-whatsapp href="#contacto" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6L3 21z"/></svg>
@@ -431,7 +434,7 @@
         <h2>Nuestros clientes vienen de padres a hijos</h2>
         <p>El niño que hoy se sienta por primera vez en el sillón es el nieto de alguien que lleva años confiando en nosotros. Así nos gusta: clientes de toda la vida que vuelven porque se sienten como en casa.</p>
         <ul class="lo-que-dicen">
-          <li>Familias que vienen juntas, de los más pequeños a los abuelos.</li>
+          <li>Familias que vienen juntas: padres, hijos y abuelos.</li>
           <li>Caballeros que valoran el trato educado y sin prisas.</li>
           <li>Personas que quieren ir siempre bien arregladas.</li>
         </ul>
@@ -483,7 +486,7 @@
         <details class="faq-item"><summary>¿Qué es el retoque cada 15 días por 9 €?</summary><p>Es un repaso del corte cada dos semanas para ir siempre bien arreglado. Cuesta 9 € cada vez y es ideal para quien quiere llevar el pelo y la nuca siempre perfectos.</p></details>
         <details class="faq-item"><summary>¿Puedo dejar el retoque quincenal fijo?</summary><p>Sí. Puede contratarlo de forma constante y le reservamos su hueco cada 15 días, así no tiene que acordarse de pedir cita.</p></details>
         <details class="faq-item"><summary>¿Cortáis el pelo a niños?</summary><p>Sí. Muchos niños se cortan aquí el pelo por primera vez acompañados de su padre o de su abuelo. Les atendemos con paciencia para que estén tranquilos.</p></details>
-        <details class="faq-item"><summary>¿Podemos venir juntos el abuelo, el padre y el hijo?</summary><p>Claro que sí, es lo que más nos gusta. Somos una peluquería familiar: pida cita para varios a la vez por WhatsApp y les organizamos los turnos seguidos.</p></details>
+        <details class="faq-item"><summary>¿Podemos venir juntos el padre, el hijo y el abuelo?</summary><p>Claro que sí, es lo que más nos gusta. Somos una peluquería familiar: pida cita para varios a la vez por WhatsApp y les organizamos los turnos seguidos.</p></details>
         <details class="faq-item"><summary>¿Hacéis cortes de pelo a domicilio?</summary><p>Sí. Vamos a casa de las personas mayores que ya no pueden desplazarse y de las personas con discapacidad, con el mismo cuidado que en la peluquería.</p></details>
         <details class="faq-item"><summary>¿Cómo pido un corte de pelo a domicilio para mi padre o mi abuelo?</summary><p>Escríbanos por WhatsApp o llame al 630 441 204. Díganos dónde vive y qué día le viene mejor, y acordamos la visita. Puede pedirlo usted en su nombre.</p></details>
         <details class="faq-item"><summary>¿El servicio a domicilio es para personas con movilidad reducida?</summary><p>Sí. Está pensado para personas mayores, personas en silla de ruedas, encamadas o con cualquier discapacidad que les impida venir. Consúltenos su caso sin compromiso.</p></details>
@@ -525,7 +528,7 @@
           </div>
           <div class="dato">
             <h3>Correo electrónico</h3>
-            <a class="pendiente" data-email href="#contacto">correo@pendiente.es</a>
+            <a data-email href="mailto:agripino_ortiz63@hotmail.com">agripino_ortiz63@hotmail.com</a>
           </div>
           <a class="btn btn--secundario" data-maps href="#ubicacion" target="_blank" rel="noopener" style="justify-self:start">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>

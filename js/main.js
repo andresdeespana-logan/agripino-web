@@ -5,7 +5,7 @@
 var CONFIG = {
   telefono: "630 441 204",
   whatsapp: "34630441204",       // mismo número que el teléfono
-  email: "correo@pendiente.es",     // PENDIENTE: correo electrónico
+  email: "agripino_ortiz63@hotmail.com",
   mensajeWhatsapp: "Hola, buenos días. Me gustaría pedir cita en la peluquería.",
   mapsUrl: "https://maps.app.goo.gl/jZgoULTzz87WoUDC6",
   mapaEmbed: "https://www.google.com/maps?q=Peluquer%C3%ADa+de+Caballeros+Agripino+Ortiz,+Calle+Rafael+Terol+32,+03001+Alicante&output=embed"
@@ -47,6 +47,14 @@ var CONFIG = {
     aplicar(on);
     try { localStorage.setItem("agripino-letra", on ? "1" : "0"); } catch (e) {}
   });
+
+  // Panorámica: en móvil empieza centrada
+  var pano = document.getElementById("panoramica");
+  if (pano) {
+    var centrar = function () { pano.scrollLeft = (pano.scrollWidth - pano.clientWidth) / 2; };
+    var img = pano.querySelector("img");
+    if (img && img.complete) centrar(); else if (img) img.addEventListener("load", centrar);
+  }
 
   var anio = document.getElementById("anio");
   if (anio) anio.textContent = new Date().getFullYear();

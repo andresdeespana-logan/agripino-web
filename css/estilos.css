@@ -133,9 +133,14 @@ html.datos-ok .pendiente { background: none; padding: 0; }
 .portada-texto { display: grid; gap: 1.5rem; min-width: 0; }
 .portada-texto > p { font-size: 1.35rem; color: var(--tinta-suave); }
 .portada-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
-.valoracion { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; font-size: 1.1rem; }
+.valoracion {
+  justify-self: start; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.75rem;
+  padding: 0.6rem 1.1rem; border: 2px solid var(--laton); border-radius: 999px;
+  color: var(--tinta); text-decoration: none; font-size: 1.1rem; background: var(--papel);
+}
+.valoracion:hover { background: var(--papel-2); }
 .estrellas { color: var(--laton); font-size: 1.5rem; letter-spacing: 0.08em; }
-.valoracion strong { font-size: 1.4rem; }
+.valoracion strong { font-family: var(--f-titulo); font-weight: 400; font-size: 2rem; line-height: 1; }
 .lamina {
   background: #fffdf8; border: 1px solid var(--linea); border-radius: 4px;
   padding: 1.25rem; box-shadow: 0 1px 0 var(--linea), 0 18px 40px -24px rgba(40, 20, 10, .45);
@@ -162,8 +167,10 @@ html.datos-ok .pendiente { background: none; padding: 0; }
 .nota-precios { margin-top: 1.5rem; font-size: 1.05rem; color: var(--tinta-suave); }
 
 /* ---------- Experiencia ---------- */
-.panoramica { border-radius: var(--radio); overflow: hidden; margin-bottom: 2.5rem; }
-.panoramica img { width: 100%; aspect-ratio: 2028 / 480; object-fit: cover; min-height: 220px; }
+.panoramica { border-radius: var(--radio); overflow: hidden; margin: 0; }
+.panoramica img { width: 100%; height: auto; }
+.panoramica-ayuda { display: none; margin-top: 0.6rem; color: var(--tinta-suave); font-size: 1rem; }
+#experiencia .rasgos { margin-top: 2.5rem; }
 .rasgos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 3rem; list-style: none; margin: 0; padding: 0; }
 .rasgos li { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
 .rasgos h3 { font-size: 1.45rem; margin-bottom: 0.35rem; }
@@ -236,6 +243,9 @@ html.datos-ok .pendiente { background: none; padding: 0; }
   .lamina { max-width: 26rem; justify-self: center; }
   .precios { grid-template-columns: 1fr; }
   .rasgos { grid-template-columns: 1fr; }
+  .panoramica { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .panoramica img { width: auto; max-width: none; height: 260px; }
+  .panoramica-ayuda { display: block; }
   .opiniones { grid-template-columns: 1fr; justify-items: start; }
 }
 @media (max-width: 480px) {
